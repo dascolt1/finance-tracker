@@ -4,7 +4,7 @@ public class Finance {
 
 	private double moneyEarned;
 	private double moneySpent;
-	private int weeksWorked;
+	private double weeksWorked;
 
 	Finance() {
 		this.moneyEarned = moneyEarned;
@@ -12,7 +12,7 @@ public class Finance {
 		this.weeksWorked = weeksWorked;
 	}
 
-	Finance(double moneyEarned, double moneySpent, int weeksWorked) {
+	Finance(double moneyEarned, double moneySpent, double weeksWorked) {
 		this.moneyEarned = moneyEarned;
 		this.moneySpent = moneySpent;
 		this.weeksWorked = weeksWorked;
@@ -36,11 +36,11 @@ public class Finance {
 		return moneySpent;
 	}
 
-	public void setWeeksWorked(int weeksWorked) {
+	public void setWeeksWorked(double weeksWorked) {
 		this.weeksWorked = weeksWorked;
 	}
 
-	public int getWeeksWorked() {
+	public double getWeeksWorked() {
 		return weeksWorked;
 	}
 
