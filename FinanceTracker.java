@@ -52,20 +52,17 @@ public class FinanceTracker {
 				}else {
 					System.out.println("You owe: " + "$" + Math.abs(tommy.moneyAfterExpenses(tommy.getMoneyEarned(), tommy.getMoneySpent())));
 					menu();
-				}
-
-
-				
+				}				
 
 
 			}else if(input == 3) {
-				//TODO
-				
+								
 				System.out.println("Please enter how many weeks you plan on working: ");
 				double weeksWork = scnr.nextDouble();
+				tommy.setWeeksWorked(weeksWork);
 
 				System.out.println(" ");
-				System.out.println("Projected revenue after " + weeksWork + " week(s): $" + tommy.projectedRevenue(tommy.getMoneyEarned(), weeksWork)); 
+				System.out.println("Projected revenue after " + weeksWork + " week(s): $" + tommy.projectedRevenue(tommy.getMoneyEarned(), tommy.getWeeksWorked())); 
 				System.out.println(" ");
 
 				menu();
